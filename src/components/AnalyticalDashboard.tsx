@@ -395,8 +395,14 @@ export const AnalyticalDashboard: React.FC = () => {
                   .theory-box.emerald-theme { border-left-color: #059669; background: #f0fdf4; border-color: #bbf7d0; color: #14532d; }
                   .formula-block { background: #f8fafc; border: 1px solid #cbd5e1; padding: 4px 8px; margin: 5px 0; font-family: monospace; font-size: 10px; font-weight: 700; text-align: center; color: #0f172a; border-radius: 4px; }
                   .footer { text-align: center; font-size: 7.5px; color: #94a3b8; border-top: 1px solid #e2e8f0; padding-top: 8px; margin-top: auto; font-weight: 700; letter-spacing: 0.5px; text-transform: uppercase; }
-                  
+                  @page {
+                    size: auto;
+                    margin: 0;
+                  }
                   @media print {
+                    body {
+                      margin: 0;
+                    }
                     .page {
                       width: 210mm;
                       height: 297mm;
