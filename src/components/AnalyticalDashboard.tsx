@@ -297,6 +297,14 @@ export const AnalyticalDashboard: React.FC = () => {
         </div>
       </div>
 
+      <div className="pt-2">
+        <button
+          onClick={() => window.print()}
+          className="w-full py-2 bg-black hover:bg-gray-900 text-white border-2 border-black font-bold text-xs uppercase cursor-pointer"
+        >
+          Export as PDF / Print
+        </button>
+      </div>
     </div>
   );
 };
