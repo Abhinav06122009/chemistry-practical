@@ -417,7 +417,7 @@ export const AnalyticalDashboard: React.FC = () => {
                 <div class="page">
                    <!-- Header -->
                     <div class="header">
-                      <img src="${window.location.origin}/logo.png" alt="Margdarshak Logo" style="height: 45px; width: auto; display: block; object-fit: contain;" />
+                      <img id="pdf-logo" src="${window.location.origin}/logo.png" alt="Margdarshak Logo" style="height: 45px; width: auto; display: block; object-fit: contain;" />
                       <div class="divider"></div>
                      <div class="header-text">
                        <h1>OBSERVATION RECORD</h1>
@@ -545,12 +545,25 @@ export const AnalyticalDashboard: React.FC = () => {
                   </div>
                 </div>
 
-                <script>
-                  window.onload = function() {
-                    setTimeout(function() {
-                      window.print();
-                    }, 300);
-                  }
+                 <script>
+                  (function() {
+                    const logo = document.getElementById('pdf-logo');
+                    function triggerPrint() {
+                      setTimeout(function() {
+                        window.print();
+                      }, 500); // Small buffer to ensure rendering is complete
+                    }
+                    if (logo) {
+                      if (logo.complete) {
+                        triggerPrint();
+                      } else {
+                        logo.onload = triggerPrint;
+                        logo.onerror = triggerPrint;
+                      }
+                    } else {
+                      window.onload = triggerPrint;
+                    }
+                  })();
                 </script>
               </body>
               </html>
