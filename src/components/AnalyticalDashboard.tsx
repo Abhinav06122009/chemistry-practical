@@ -415,14 +415,15 @@ export const AnalyticalDashboard: React.FC = () => {
               </head>
               <body>
                 <div class="page">
-                  <!-- Header -->
-                  <div class="header">
-                    <div class="divider"></div>
-                    <div class="header-text">
-                      <h1>OBSERVATION RECORD</h1>
-                      <h2>Estimation of Bleaching Powder for Water Disinfection</h2>
-                    </div>
-                  </div>
+                   <!-- Header -->
+                   <div class="header">
+                     <img src="/logo.png" alt="Margdarshak Logo" style="height: 45px; width: auto; display: block; object-fit: contain;" />
+                     <div class="divider"></div>
+                     <div class="header-text">
+                       <h1>OBSERVATION RECORD</h1>
+                       <h2>Estimation of Bleaching Powder for Water Disinfection</h2>
+                     </div>
+                   </div>
 
 
                   <!-- Table 1: Blank standardization -->
