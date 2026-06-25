@@ -418,14 +418,6 @@ export const AnalyticalDashboard: React.FC = () => {
                     </div>
                   </div>
 
-                  <!-- Student Details Slip -->
-                  <div class="student-slip">
-                    <div>Student Name: <span>R.NITHYASREE</span></div>
-                    <div>Roll Number: <span>12104</span></div>
-                    <div>Class & Section: <span>XII-A</span></div>
-                    <div>School: <span>PM Shri K.V. Island Grounds</span></div>
-                    <div style="grid-column: span 2;">Chemistry Mentor: <span>MR.YODDHA SIR</span></div>
-                  </div>
 
                   <!-- Table 1: Blank standardization -->
                   <div class="section-title">Standardization of Bleaching Powder Solution (Blank V₁)</div>
