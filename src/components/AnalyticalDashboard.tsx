@@ -533,9 +533,8 @@ export const AnalyticalDashboard: React.FC = () => {
                     </div>
                   </div>
 
-                  <!-- Footer -->
                   <div class="footer" style="margin-top: 15px;">
-                    COPYRIGHT VSAV GYANTAPA AND MARGDARSHAK VLABS &bull; PM SHRI K.V. ISLAND GROUNDS
+                    COPYRIGHT VSAV GYANTAPA AND MARGDARSHAK VLABS &bull; designed by ABHINAV JHA
                   </div>
                 </div>
 
